@@ -1,0 +1,32 @@
+@use '../abstracts/variables';
+
+.content__leader{
+  padding: 3rem 2rem;
+  height: 100vh;
+}
+.content__leader img{
+  width: 100%;
+  border-radius: 1rem;
+}
+.content__leader h2{
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 3rem;
+  font-weight: 300;
+  font-family: variables.$Josefin;
+  color: variables.$Very-Dark-Gray;
+  text-transform: uppercase;
+}
+
+.content__leader p{
+  width: 80%;
+  text-align: center;
+  margin: auto;
+  font-size: 1.4rem;
+  color: variables.$Dark-Gray;
+  font-weight: 600;
+  font-family: variables.$Josefin;
+  line-height: 2.5rem;
+}
