@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import '../../scss/components/Header.scss'
 import logo from '../../assets/logo.svg'
 import iconHamburger from '../../assets/icon-hamburger.svg'
-import { NavList } from "../../scss/components/NavList";
+import { NavList } from "./NavList";
 
 function Header() {
 
