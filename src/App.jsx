@@ -1,4 +1,5 @@
 import { Header } from "./components/Header/Header"
+import { Creations } from "./components/main/Creations"
 import { Leader } from "./components/main/Leader"
 
 function App() {
@@ -7,6 +8,7 @@ function App() {
     <>
     <Header />
     <Leader />
+    <Creations />
     </>
   )
 }
