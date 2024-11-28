@@ -9,32 +9,114 @@ footer {
   align-items: center;
   gap: 4rem;
 
-  &>ul {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  .content-list {
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
 
-    li {
-      text-align: center;
+      li {
+        text-align: center;
 
-      a {
-        color: variables.$White;
-        font-size: 1.4rem;
-        font-family: variables.$Alata;
+        a {
+          color: variables.$White;
+          font-size: 1.4rem;
+          font-family: variables.$Alata;
+        }
       }
     }
   }
 
-  .content-list ul {
+  .content-list-socialMedia {
     display: flex;
+    flex-direction: column;
     align-items: center;
     gap: 3rem;
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: variables.$Dark-Gray;
+      font-family: variables.$Josefin;
+      font-weight: bold;
+    }
+  }
+}
+
+// Desktop
+
+@media (min-width: 1024px) {
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    padding-inline: 10rem;
+
+    .content-list {
+      ul {
+        margin-top: 2rem;
+        flex-direction: row;
+        gap: 2rem;
+
+        li {
+          text-align: center;
+
+          a {
+            color: variables.$White;
+            font-size: 1.4rem;
+            font-family: variables.$Alata;
+            position: relative;
+
+            &::after {
+              content: ' ';
+              position: absolute;
+              width: 100%;
+              height: .4rem;
+              background: variables.$White;
+              bottom: -1rem;
+              left: 0;
+              transition: .4s ease-in-out;
+              transform: scaleX(0);
+            }
+
+            &:hover::after {
+              transform: scaleX(1);
+            }
+          }
+        }
+      }
+    }
+
+    .content-list-socialMedia {
+      align-items: end;
+
+      ul {
+        li {
+          position: relative;
+
+          &::after {
+            content: ' ';
+            position: absolute;
+            width: 100%;
+            height: .4rem;
+            background: variables.$White;
+            bottom: -1rem;
+            left: 0;
+            transition: .4s ease-in-out;
+            transform: scaleX(0);
+          }
+
+          &:hover::after {
+            transform: scaleX(1);
+          }
+
+        }
+      }
+    }
   }
 
-  p {
-    font-size: 1.2rem;
-    color: variables.$Dark-Gray;
-    font-family: variables.$Josefin;
-    font-weight: bold;
-  }
 }
