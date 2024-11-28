@@ -10,8 +10,8 @@ function NavList(props) {
   return (
     <nav className={active ? 'active' : 'disable'}>
       <div>
-        <img src={logo} alt="logo" />
-        <img src={iconClose} alt="icon-close" onClick={handleNav} />
+        <img className='icon' src={logo} alt="logo" />
+        <img className='icon' src={iconClose} alt="icon-close" onClick={handleNav} />
       </div>
      <LinkList />
     </nav>

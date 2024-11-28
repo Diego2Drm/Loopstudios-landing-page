@@ -17,7 +17,7 @@ function Header() {
       <div>
         <img src={logo} alt="logo" />
         <div>
-          <img src={iconHamburger} alt="icon-hamburger" onClick={handleNav}/>
+          <img className="icon" src={iconHamburger} alt="icon-hamburger" onClick={handleNav}/>
           <NavList active={navActive} handleNav={handleNav}/>
         </div>
       </div>
