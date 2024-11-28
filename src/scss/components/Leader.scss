@@ -4,31 +4,81 @@
   padding: 3rem 2rem;
   height: 100vh;
 
-  img {
+  .content__leader--img {
+    background: url("../../assets/mobile/image-interactive.jpg") no-repeat;
+    background-size: cover;
     width: 100%;
+    height: 25rem;
     border-radius: 1rem;
   }
 
-  h2 {
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    text-align: center;
-    font-size: 3rem;
-    line-height: 3rem;
-    font-weight: 300;
-    font-family: variables.$Josefin;
-    color: variables.$Very-Dark-Gray;
-    text-transform: uppercase;
+  .content__leader-info {
+    h2 {
+      margin-top: 3rem;
+      margin-bottom: 2rem;
+      text-align: center;
+      font-size: 3rem;
+      line-height: 3rem;
+      font-weight: 300;
+      font-family: variables.$Josefin;
+      color: variables.$Very-Dark-Gray;
+      text-transform: uppercase;
+    }
+
+    p {
+      width: 80%;
+      text-align: center;
+      margin: auto;
+      font-size: 1.4rem;
+      color: variables.$Dark-Gray;
+      font-weight: 600;
+      font-family: variables.$Josefin;
+      line-height: 2.5rem;
+    }
+  }
+}
+
+// Desktop
+@media (min-width: 1024px) {
+  .content__leader {
+    display: flex;
+    padding: 8rem 12rem;
+    position: relative;
+    .content__leader--img{
+      width: 65%;
+      background: url("../../assets/desktop/image-interactive.jpg");
+      background-size: cover;
+      height: 100%;
+
+    }
+    .content__leader-info {
+      background: variables.$White;
+      position: absolute;
+      width: 60rem;
+      height: 30rem;
+      left: 50%;
+      bottom: 8rem;
+      padding: 7rem 4rem 0;
+      h2 {   
+        width: 40rem;
+        margin-bottom: 3rem;
+        text-align: start;
+        font-size: 3rem;
+        line-height: 3rem;
+        font-weight: 400;
+        word-spacing: 1rem;
+      }
+  
+      p {
+        width: 80%;
+        text-align: start;
+        margin: 0;
+        font-size: 1.4rem;
+        color: variables.$Dark-Gray;
+        font-weight: 600;
+        font-family: variables.$Josefin;
+      }
+    }
   }
 
-  p {
-    width: 80%;
-    text-align: center;
-    margin: auto;
-    font-size: 1.4rem;
-    color: variables.$Dark-Gray;
-    font-weight: 600;
-    font-family: variables.$Josefin;
-    line-height: 2.5rem;
-  }
 }
