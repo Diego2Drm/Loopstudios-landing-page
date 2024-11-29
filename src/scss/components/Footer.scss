@@ -1,18 +1,17 @@
 @use '../abstracts/variables';
+@use '../abstracts/mixins';
 
 footer {
   margin-top: 6rem;
   background: variables.$Black;
   padding: 5rem;
-  display: flex;
-  flex-direction: column;
+  @include mixins.flexDirection(column);
   align-items: center;
   gap: 4rem;
 
   .content-list {
     ul {
-      display: flex;
-      flex-direction: column;
+      @include mixins.flexDirection(column);
       gap: 2rem;
 
       li {
@@ -28,8 +27,7 @@ footer {
   }
 
   .content-list-socialMedia {
-    display: flex;
-    flex-direction: column;
+    @include mixins.flexDirection(column);
     align-items: center;
     gap: 3rem;
 
@@ -52,14 +50,14 @@ footer {
 
 @media (min-width: 1024px) {
   footer {
-    flex-direction: row;
+    @include mixins.flexDirection(row);
     justify-content: space-between;
     padding-inline: 10rem;
 
     .content-list {
       ul {
         margin-top: 2rem;
-        flex-direction: row;
+        @include mixins.flexDirection(row);
         gap: 2rem;
 
         li {

@@ -1,4 +1,5 @@
 @use '../abstracts/variables';
+@use '../abstracts/mixins';
 
 .content__creations {
   padding-inline: 2rem;
@@ -90,9 +91,7 @@
     width: 100%;
 
     .content__creations-title {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      @include mixins.flexCenter(space-between,center);
       padding-inline: 10rem;
       margin-bottom: 3rem;
 
@@ -106,10 +105,8 @@
       }
 
       a {
-        display: flex;
-        justify-content: center;
+        @include mixins.flexCenter(center,center);
         font-size: 1.6rem;
-        text-align: center;
         color: variables.$Very-Dark-Gray;
         font-weight: bold;
         font-family: variables.$Alata;

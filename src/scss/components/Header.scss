@@ -1,4 +1,5 @@
 @use '../abstracts/variables';
+@use '../abstracts/mixins';
 
 .content__header {
   background: url(../../assets/mobile/image-hero.jpg) no-repeat;
@@ -8,9 +9,7 @@
   padding: 3rem 2rem;
 
   div {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @include mixins.flexCenter(space-between,center);
   }
 
   p {
@@ -29,16 +28,14 @@
 nav {
   background: variables.$Black;
   padding: 3rem 2rem;
-  display: flex;
-  flex-direction: column;
+  @include mixins.flexDirection(column);
   gap: 10rem;
   position: fixed;
   z-index: 2;
   inset: 0;
 
   ul {
-    display: flex;
-    flex-direction: column;
+    @include mixins.flexDirection(column);
     gap: 3rem;
     font-size: 2.5rem;
     font-family: variables.$Josefin;
@@ -89,14 +86,12 @@ nav.active {
   nav {
     background: transparent;
     padding: 0;
-    display: flex;
-    flex-direction: row;
+   @include mixins.flexDirection(row);
     gap: 0rem;
     position: initial;
 
     ul {
-      display: flex;
-      flex-direction: row;
+      @include mixins.flexDirection(row);
       gap: 3rem;
       font-size: 1.8rem;
       text-transform: capitalize;
