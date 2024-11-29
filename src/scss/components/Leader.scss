@@ -54,11 +54,12 @@
     .content__leader-info {
       background: variables.$White;
       position: absolute;
-      width: 60rem;
+      min-width: 51rem;
+      max-width: 60rem;
       height: 30rem;
       left: 50%;
       bottom: 8rem;
-      padding: 7rem 4rem 0;
+      padding: 6rem 4rem 0;
       h2 {   
         width: 40rem;
         margin-bottom: 3rem;
