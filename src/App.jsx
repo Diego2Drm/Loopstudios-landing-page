@@ -13,7 +13,7 @@ function App() {
       <Footer />
       <div className="attribution">
         Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-        Coded by <a href="#">Diego Ramírez</a>.
+        Coded by <a href="https://github.com/Diego2Drm/Loopstudios-landing-page">Diego Ramírez</a>.
       </div>
     </>
   )
